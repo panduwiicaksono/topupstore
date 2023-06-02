@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="LoginActivity"
+    android:layout_margin="50dp"
+    tools:ignore="MissingConstraints">
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="-129dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="@color/ufont"
+        android:id="@+id/tv_username"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Masukan Username"
+        android:id="@+id/et_username"
+        app:layout_constraintTop_toBottomOf="@id/tv_username"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        android:textColor="@color/ufont"
+        android:id="@+id/tv_password"
+        app:layout_constraintTop_toBottomOf="@id/et_username"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Masukan Password"
+        android:id="@+id/et_password"
+        app:layout_constraintTop_toBottomOf="@id/tv_password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:id="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@id/et_password"
+        android:backgroundTint="@color/utama"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
